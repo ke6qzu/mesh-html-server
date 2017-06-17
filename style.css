@@ -1,0 +1,30 @@
+body { background: black url("images/stars.gif"); color:AliceBlue;}
+a:link {color:LIghtSkyBlue;}
+a:visited {color:SkyBlue;}
+a:active {color:SlateBlue;}
+
+table.myborder {
+border-width: 8px;
+border-spacing: 2px;
+border-style: ridge;
+border-color: maroon;
+border-bottom-color: DarkRed;
+border-right-color: DarkRed;
+border-collapse: collapse;
+}
+
+table.myborder th {
+border-width: 2px;
+padding: 1px;
+border-style: inset;
+border-color: maroon;
+-moz-border-radius: 3px 3px 3px 3px;
+}
+
+table.myborder td {
+border-width: 2px;
+padding: 2px;
+border-style: inset;
+border-color: maroon;
+-moz-border-radius: 3px 3px 3px 3px;
+}
