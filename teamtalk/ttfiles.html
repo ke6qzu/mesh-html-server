@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="Content-Type">
+  <title>.tt Files and tt:// URLs for TeamTalk Servers</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<center><img alt="BearWare.dk" src="bearware.gif"></center>
+<a href=toc.html>TeamTalk 4 Help</a>
+<a href=../index.html>Home</a>
+<h1><code>.tt</code> Files and <code>tt://</code> URLs for TeamTalk
+Servers</h1>
+It is sometimes difficult to explain novice TeamTalk users how they
+should connect to a TeamTalk server and join a channel. For this reason
+it's possible to make a so-called <code>.tt</code> files and tt URLs
+which automates this
+process. A <code>.tt</code> file is a file which is associated with
+the TeamTalk
+application, so when a users double-clicks the file it bring up
+TeamTalk which will then connect to the server. A <code>tt://</code>
+URL is a link which can be put on a HTML page and once clicked will
+launch TeamTalk which will connect to the server.<br>
+<br>
+<code>.tt</code> files and <code>tt://</code> URLs are explained the
+following sections:<br>
+<ul>
+  <li><a href="#genttfile">Generate <code>.tt</code> File</a></li>
+  <li><a href="#tturl"><code>tt://</code> URL</a></li>
+</ul>
+<br>
+<h2><a name="genttfile"></a>Generate .tt File</h2>
+To generate a .tt file bring up the <i>Connect</i> dialog by pressing
+F2. Fill out the fields which are required to connect to the TeamTalk
+server like in the example below:<br>
+<br>
+<div align="center"><img alt="Generate TT File" src="connect.png"
+ height="492" width="576"><br>
+</div>
+<br>
+When all the required information has been put in press the button <i>Generate
+.tt File</i>. TeamTalk
+will now ask where to store the file. Once the file has been stored on
+disk you can send the .tt file to other users, so they can connect to
+the same server.<br>
+<h2><a name="tturl"></a>tt:// URL</h2>
+An <code>&lt;a href="</code>.... tag on a HTML page can be used to
+launch the TeamTalk application and make it connect to the server
+specified. Here is an example:<br>
+<br>
+<code>&lt;<font color="#3333ff">html</font>&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;<font color="#3333ff">title</font>&gt;My
+TeamTalk Server Website&lt;/<font color="#3333ff">title</font>&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;<font color="#3333ff">body</font>&gt;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Click &lt;<font color="#3333ff">a
+href</font>="<font color="#ff0000">tt://teamtalk.dyndns.dk?tcpport=10333&amp;amp;udpport=10333&amp;amp;username=guest&amp;amp;password=guest</font>"&gt;here&lt;/<font
+ color="#3333ff">a</font>&gt; to join my TeamTalk Server.<br>
+&nbsp;&nbsp;&nbsp; &lt;/<font color="#3333ff">body</font>&gt;<br>
+&lt;/<font color="#3333ff">html</font>&gt;</code><br>
+<br>
+A <code>tt://</code> URL supports the following properties:<br>
+<ul>
+  <li>tcpport</li>
+  <ul>
+    <li>Server's TCP port<br>
+    </li>
+  </ul>
+  <li>udpport</li>
+  <ul>
+    <li>Server's UDP port<br>
+    </li>
+  </ul>
+  <li>srvpasswd</li>
+  <ul>
+    <li>Server's password<br>
+    </li>
+  </ul>
+  <li>username</li>
+  <ul>
+    <li>Username for user account<br>
+    </li>
+  </ul>
+  <li>password</li>
+  <ul>
+    <li>Password for user account</li>
+  </ul>
+  <li>channel</li>
+  <ul>
+    <li>The channel to join after login</li>
+  </ul>
+  <li>chanpasswd</li>
+  <ul>
+    <li>Password of the channel to join<br>
+    </li>
+  </ul>
+</ul>
+All the above properties are optional. If they're not specified the
+TeamTalk client will connect using the default TCP and UDP ports. Click
+<a
+ href="tt://teamtalk.dyndns.dk?tcpport=10333&amp;udpport=10333&amp;username=guest&amp;password=guest">here</a>
+to try the above <code>tt://</code> URL
+<br>
+<br>
+</body>
+</html>

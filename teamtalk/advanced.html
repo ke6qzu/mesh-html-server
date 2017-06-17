@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="Content-Type">
+  <title>TeamTalk Server Setup</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<center><img alt="BearWare.dk" src="bearware.gif"></center>
+<a href=toc.html>TeamTalk 4 Help</a>
+<a href=../index.html>Home</a>
+<h1>Advanced Topics<br>
+</h1>
+The TeamTalk client supports a couple of command-line arguments and
+additionals configuration options which are explain in the following
+sections:<br>
+<ul>
+  <li><a href="#cmdargs">Command-line arguments</a></li>
+  <li><a href="#settingsfile">Load settings file</a><br>
+  </li>
+</ul>
+<h2><a name="cmdargs"></a>Command line arguments</h2>
+The TeamTalk 4 client supports the following command-line arguments:<br>
+<ul>
+  <li>TeamTalk URL</li>
+  <ul>
+    <li>Usage: <code>TeamTalk4.exe tt://192.168.0.10?tcpport=10333&amp;udpport=10333</code><br>
+    </li>
+  </ul>
+  <li>TeamTalk .tt file</li>
+  <ul>
+    <li>Usage: <code>TeamTalk4.exe C:\Documents\myserver.tt</code></li>
+  </ul>
+  <li>Add to Windows Firewall</li>
+  <ul>
+    <li>Usage: <code>TeamTalk4.exe -fwadd</code></li>
+  </ul>
+  <li>Remove from Windows Firewall</li>
+  <ul>
+    <li>Usage: <code>TeamTalk4.exe -fwremove</code></li>
+  </ul>
+  <li>Override auto-connect setting</li>
+  <ul>
+    <li>Usage: <code>TeamTalk4.exe -noconnect</code><br>
+    </li>
+  </ul>
+</ul>
+<h2><a name="settingsfile"></a>Load settings file</h2>
+By default the TeamTalk client first looks in the directory of the
+executable for its settings file (TeamTalk4.ini). If the settings file
+isn't located there it will instead load its settings from the
+user-profile's directory. On Windows 7 the user-profile directory is
+typically located in "C:\Users\username\AppData\Roaming" and on Windows
+XP it's in "C:\Documents and Settings\username\Application Data". On
+Linux and Mac the settings are located in $HOME/.config/BearWare.dk.<br>
+<h3>Multiple client instances<br>
+</h3>
+Since the TeamTalk executable first tries to load settings from its own
+directory it's possible to run multiple TeamTalk clients with different
+settings. Simply create a new directory, copy TeamTalk4.exe and
+TeamTalk4.dll to that directory and create a file called TeamTalk4.ini
+(TeamTalk.xml in the Classic client). Launch TeamTalk4.exe and it will
+use the local settings file instead of the settings file in the
+user-profile.<br>
+</body>
+</html>

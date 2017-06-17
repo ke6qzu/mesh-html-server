@@ -1,0 +1,158 @@
+<!-- $Id: aredn_ubiquiti.html,v 1.4 2016/06/19 18:01:46 ke6qzu Exp $ -->
+<HTML>
+<head>
+<title>Ubiquiti ? Router Files</title>
+</head>
+
+<BODY BGCOLOR="black" BACKGROUND="images/stars.gif" TEXT="aliceblue" 
+      LINK="LightSkyBlue" VLINK="SkyBlue" ALINK="SlateBlue">
+
+<style type="text/css">
+  table.myborder {
+  border-width: 8px;
+  border-spacing: 2px;
+  border-style: ridge;
+  border-color: maroon;
+  border-bottom-color: DarkRed;
+  border-right-color: DarkRed;
+  border-collapse: collapse;
+  }
+
+  table.myborder th {
+  border-width: 2px;
+  padding: 1px;
+  border-style: inset;
+  border-color: maroon;
+  -moz-border-radius: 3px 3px 3px 3px;
+  }
+
+  table.myborder td {
+  border-width: 2px;
+  padding: 2px;
+  border-style: inset;
+  border-color: maroon;
+  -moz-border-radius: 3px 3px 3px 3px;
+  }
+</style>
+
+
+<!-- The following uses css shadows to create a red glow around the words KE6QZU's Pi. If, however, it detects IE, which is stupid and can't handle it,
+     it closes the font, creates a different one, uses an image (saved from a screen capture of firefox running the non-ie code) and then causes the text 
+     SLC Build to be tiny and black.
+
+     It would have been more consistent to just use the image on all browsers, but why should I do that just for IE's stuipd sake? I hate IE anyway. This
+     way, real browsers (Firefox, Google Chrome, Opera, etc.) can do something cool. IE can suck buttermilk!! -->
+
+<p ALIGN="CENTER"><B><FONT size=+5 style="background: transparent; color: black; text-shadow: 0px 0px 4px #bd1143, 0px 0px 8px #bd1143, 0px 0px 12px #bd1143, 0px 0px 18px #bd1143, 0 0 2px beige;">
+Ubiquiti ? Router Files
+</FONT></B></p>
+<CENTER>
+<p><a href=index.html>Home</a></p>
+</CENTER>
+<p>Before flashing a Ubiquiti device that is running or has been running AirOS version 5.6, please run the AREDN U-Boot Test program below before attempting a firmware load or upgrade.</p>
+<p>We have developed the following utility to help you determine if your device is compatible, as well as being able to take a BACKUP of your node&#39;s critical partitions.</p>
+<p>Download and run the 
+<a href=mesh_files/AREDN%20U-Boot%20Test%20v1.1.4.0%20setup.exe>AREDN U-Boot Test Setup Program.</a>
+If the test results in a "GOOD/GOOD" result, then you may proceed to load the appropriate AREDN firmware onto it.</p>
+<p>If the test results are "BAD," then you should do the following:</p>
+<ul>
+ <li>Backup your device partitions using the AREDN U-Boot Test program.</li>
+ <li>Use the AirOS GUI to downgrade to AirOS v5.5.x.</li>
+ <li>Re-run the AREDN U-Boot Test program and look for a "GOOD/GOOD" test.</li>
+ <li>If "GOOD/GOOD", you can safely use the AirOS GUI to install the AREDN firmware.</li>
+</ul>
+<p>Requires Windows 7 or higher and Microsoft .NET Framework 4.5.</p>
+<CENTER>
+<table class=myborder width="90%">
+<tr>
+<td align=center width=30%><B><font size=+2 COLOR="firebrick">Ubiquiti Device</font></B></td>
+<Td align=center width=30%><B><font size=+2 COLOR="firebrick">Ubiquiti Factory ?AirOS</font></B></td>
+</tr>
+<tr> 
+<td width=30% valign="top" align="left"> 
+Bullet M2<br>
+       Bullet M5<br>
+       Bullet M2 Titanium<br>
+       Bullet M5 Titanium<br>
+       NanoStation Loco M2<br>
+       NanoStation Loco M5 (XM)<br>
+       NanoStation Loco M9<br>
+       NanoBridge M2<br>
+       NanoBridge M5<br>
+       NanoBridge M9<br>
+       AirGrid M2<br>
+       AirGrid M5<br>
+       PicoStation M2
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/AREDN-3.16.1.0-ubnt-bullet-m-squashfs-factory.bin>factory</a><br>
+md5sum: ceff5a353c800ec7469341a14c8f6c30<hr>
+Size: 4.7M
+      </td>
+    </tr> 
+    <tr> 
+      <td width=30% valign="top" align="left"> 
+       NanoStation M2<br>
+       NanoStation M3<br>
+       NanoStation M5 (XM)<br>
+       NanoBridge M3
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/AREDN-3.16.1.0-ubnt-nano-m-squashfs-factory.bin>factory</a><br>
+md5sum: e32e1b1527a51e1a9d19de2ed0def35e<hr>
+Size: 4.7M
+      </td>
+    </tr> 
+    <tr> 
+      <td width=30% valign="top" align="left"> 
+       Rocket M2<br>
+       Rocket M3<br>
+       Rocket M5<br>
+       Rocket M9
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/AREDN-3.16.1.0-ubnt-rocket-m-squashfs-factory.bin>factory</a><br>
+md5sum: 77ed732796e765640444ab203667971c<hr>
+Size: 4.7M
+      </td>
+    </tr> 
+    <tr> 
+      <td width=30% valign="top" align="left"> 
+       NanoStation M5 (XW)
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/AREDN-3.16.1.0-ubnt-nano-m-xw-squashfs-factory.bin>factory</a><br>
+md5sum: 8e1d88a34233a9ec7fc31866909dca12<hr>
+Size: 4.7M
+      </td>
+    </tr> 
+    <tr> 
+      <td width=30% valign="top" align="left"> 
+       AirRouter<br>
+       AirRouter HP
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/AREDN-3.16.1.0-ubnt-airrouter-squashfs-sysupgrade.bin>sysupgrade</a><br>
+md5sum: 34aaf7faae19fc9de0ab6c129b8aae95<hr>
+Size: 4.7M
+      </td>
+    </tr> 
+  </table>
+
+<BR>
+<HR>
+<ADDRESS><FONT size=-1 color=DimGray>
+<script>
+        var theDate = ""
+        theDate = document.lastModified
+        document.writeln("Last modified ");
+        document.write(theDate);
+        document.write();
+</script>
+<BR>
+Page maintained by ke6qzu<BR>
+</FONT></ADDRESS>
+</CENTER>
+</FONT>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- $Id: teamtalk.html,v 1.6 2016/06/25 01:12:13 ke6qzu Exp $ -->
+<HTML>
+<head>
+<title>TeamTalk 4.6.3</title>
+</head>
+
+<BODY BGCOLOR="black" BACKGROUND="images/stars.gif" TEXT="aliceblue" 
+      LINK="LightSkyBlue" VLINK="SkyBlue" ALINK="SlateBlue">
+
+<style type="text/css">
+  table.myborder {
+  border-width: 8px;
+  border-spacing: 2px;
+  border-style: ridge;
+  border-color: maroon;
+  border-bottom-color: DarkRed;
+  border-right-color: DarkRed;
+  border-collapse: collapse;
+  }
+
+  table.myborder th {
+  border-width: 2px;
+  padding: 1px;
+  border-style: inset;
+  border-color: maroon;
+  -moz-border-radius: 3px 3px 3px 3px;
+  }
+
+  table.myborder td {
+  border-width: 2px;
+  padding: 2px;
+  border-style: inset;
+  border-color: maroon;
+  -moz-border-radius: 3px 3px 3px 3px;
+  }
+</style>
+
+
+<!-- The following uses css shadows to create a red glow around the words KE6QZU's Pi. If, however, it detects IE, which is stupid and can't handle it,
+     it closes the font, creates a different one, uses an image (saved from a screen capture of firefox running the non-ie code) and then causes the text 
+     SLC Build to be tiny and black.
+
+     It would have been more consistent to just use the image on all browsers, but why should I do that just for IE's stuipd sake? I hate IE anyway. This
+     way, real browsers (Firefox, Google Chrome, Opera, etc.) can do something cool. IE can suck buttermilk!! -->
+
+<p ALIGN="CENTER"><B><FONT size=+5 style="background: transparent; color: black; text-shadow: 0px 0px 4px #bd1143, 0px 0px 8px #bd1143, 0px 0px 12px #bd1143, 0px 0px 18px #bd1143, 0 0 2px beige;">
+TeamTalk 4.6.3</FONT></B></p>
+<CENTER>
+<p><a href=index.html>Home</a></p>
+  <table class=myborder width="50%">
+    <TR>
+      <TD align=center width=50%><B><font size=+1 color=firebrick>TeamTalk 4.6.3 Files </font></B></TD>
+      <TD align=center width=50%><b><font size=+1 color=firebrick>TeamTalk Help Links </font></B></TD>
+    </TR>
+    <TR>
+      <td width=50% valign="top"> 
+        <UL>
+          <LI><a href=teamtalk/TeamTalk_v4.6.3_Setup.exe>Windows XP/7/8/10</a></LI>
+          <LI><a href=teamtalk/TeamTalk_v4.6.3_Setup.dmg>Mac OS X 32 bit</a></LI>
+          <LI><a href=teamtalk/TeamTalk_v4.6.3_x64_Setup.dmg>Mac OS X 64 bit</a></LI>
+          <LI><a href=teamtalk/teamtalk-4.6.3-debian6-i386.tar.gz>Linux i386</a></LI>
+          <LI><a href=teamtalk/teamtalk-4.6.3-debian6-amd64.tar.gz>Linux amd64</a></LI>
+          <LI><a href=teamtalk/teamtalk-4.6.3-raspbian-armhf.tar.gz>Raspberry Pi</a></LI>
+        </UL>
+      </td>
+      <td width=50% valign="top"> 
+        <UL>
+          <LI>How to allow a TeamTalk server to be seen on the hsmm-mesh</LI>
+          <LI><a href=teamtalk/toc.html>How to configure and use TeamTalk</a></LI>
+        </UL>
+      </td>
+    </TR>
+  </TABLE>
+
+<BR>
+<HR>
+<ADDRESS><FONT size=-1 color=DimGray>
+<script>
+        var theDate = ""
+        theDate = document.lastModified
+        document.writeln("Last modified ");
+        document.write(theDate);
+        document.write();
+</script>
+<BR>
+Page maintained by ke6qzu<BR>
+</FONT></ADDRESS>
+</CENTER>
+</FONT>
+</body>
+</html>

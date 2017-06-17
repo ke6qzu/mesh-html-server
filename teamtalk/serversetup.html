@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="Content-Type">
+  <title>TeamTalk Server Setup</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<center><img alt="BearWare.dk" src="bearware.gif"></center>
+<a href=toc.html>TeamTalk 4 Help</a>
+<a href=../index.html>Home</a>
+<h1>TeamTalk Server Setup<br>
+</h1>
+This section explains how to set up a TeamTalk server. This is a quite
+complicated procedure so users who are
+not so skilled with network setup are advised to use the public
+TeamTalk
+servers which are available in the <em>Connect to Server</em> dialog
+(press F2). To
+be able to set up a TeamTalk server you first you need to ensure that
+the TeamTalk server was installed when you ran the TeamTalk
+installation. If it is installed there will be a folder called
+"TeamTalk NT Service" in the "TeamTalk 4" program group of Windows'
+start-menu.<br>
+<br>
+Here's an overview of this section:<br>
+<ul>
+  <li><a href="#confserver">Configuring and Installing the TeamTalk
+Server as an NT service<br>
+    </a></li>
+  <li><a href="serversetup.html#ntservices">Installing multiple NT
+Services</a></li>
+  <li><a href="#linuxmacsrv">TeamTalk Server on Linux and Mac OS X</a><br>
+  </li>
+  <li><a href="#manconf">Manually configuring the TeamTalk server</a></li>
+</ul>
+<h2><a name="confserver"></a>Configuring and Installing the TeamTalk
+Server as an NT service<br>
+</h2>
+To install the TeamTalk server click "Install TeamTalk NT Service" in
+the TeamTalk 4 program group. On Windows Vista this will bring up User
+Access Control (UAC) since the TeamTalk server requires Administrator
+access. The TeamTalk server will now run it's configuration wizard (its
+<code>-wizard</code> option). If you want to change the server's
+default settings or set up user accounts you need to run the
+configuration wizard and answer 'y' to the first question.<br>
+<br>
+Here is an example of how to set up a server which allows file sharing,
+guest logins (users without user accounts) and has one user account for
+an administrator with the username 'admin' and password 'admin':<br>
+<br>
+<div align="center"><img alt="Server Wizard" src="serverwizard.png"><br>
+<div align="left"><br>
+When the configuration has completed you can try to connect to the
+server by starting TeamTalk can put in 127.0.0.1 as the server's
+IP-address.<br>
+<br>
+<h2><a name="ntservices"></a>Installing multiple NT Services</h2>
+<p>To install multiple TeamTalk 4 NT Services the <code>sc.exe</code>
+command can be used. Here is an example: </p>
+<div class="fragment">
+<pre class="fragment"> <br>sc.exe create "TeamTalk Server 2" binPath= "C:\MyServer\tt4svc.exe -wd c:\MyServer" start= auto<br></pre>
+</div>
+<p>The service in the above example will be called "TeamTalk Server 2"
+in the NT service list. Notice the spaces after <code>binPath</code>
+and <code>start</code>. For some strange reason these are required. To
+start the above service run: </p>
+<div class="fragment">
+<pre class="fragment"> <br>sc.exe start "TeamTalk Server 2"<br></pre>
+</div>
+<p> To stop it type: </p>
+<div class="fragment">
+<pre class="fragment"> <br>sc.exe stop "TeamTalk Server 2"<br></pre>
+</div>
+<p> To uninstall it type: </p>
+<div class="fragment">
+<pre class="fragment"> <br>sc.exe delete "TeamTalk Server 2"<br><br></pre>
+<h2><a name="linuxmacsrv"></a>TeamTalk Server on Linux and Mac OS X</h2>
+The Linux and Mac OS X distributions of TeamTalk also include a
+TeamTalk server which can run both in daemon mode and as a regular
+console application. On Linux the TeamTalk server binary is called <font
+ face="Courier New, Courier, monospace">teamtalkd</font> and is
+located in the <font face="Courier New, Courier, monospace">server</font>
+subfolder after untar'ing the archive. On Mac OS X the server binary is
+also called <font face="Courier New, Courier, monospace">teamtalkd</font>
+and is located in <font face="Courier New, Courier, monospace">/Applications/TeamTalk4.app/Contents/Server</font>
+subfolder after installing the TeamTalk .dmg file.<br>
+<br>
+For instructions on how to configure and run the TeamTalk server (<font
+ face="Courier New, Courier, monospace">teamtalkd</font>) simply type <font
+ face="Courier New, Courier, monospace">./teamtalkd</font> to execute
+the server and get a list of options. Type <font
+ face="Courier New, Courier, monospace">./teamtalkd -wizard</font> to
+start the TeamTalk server setup-wizard.<br>
+<h2><a name="manconf"></a>Manually configuring the TeamTalk server</h2>
+This section is for the more hardcode TeamTalk users who want to
+manually configure the TeamTalk server.<br>
+<br>
+The TeamTalk server reads its configuration from an XML file, typically
+<code>tt4svc.xml</code>. This file can be edited manually (using an
+UTF-8 aware editor) or one can choose to use the <code>-wizard</code>
+option to the server executable.
+<p>Below is an example a server's configuration file:<br>
+</p>
+<div class="fragment">
+<pre class="fragment">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;<br>&lt;teamtalk version="4.0"&gt;<br>    &lt;general&gt;<br>        &lt;server-name&gt;TeamTalk Server&lt;/server-name&gt;<br>        &lt;motd&gt;My login message to users&lt;/motd&gt;<br>        &lt;max-users&gt;1000&lt;/max-users&gt;<br>        &lt;auto-save&gt;true&lt;/auto-save&gt;<br>        &lt;bind-ip&gt;&lt;/bind-ip&gt;<br>        &lt;tcpport&gt;10333&lt;/tcpport&gt;<br>        &lt;udpport&gt;10333&lt;/udpport&gt;<br>        &lt;server-password&gt;&lt;/server-password&gt;<br>        &lt;server-log-maxsize&gt;-1&lt;/server-log-maxsize&gt;<br>        &lt;login-attempts&gt;10&lt;/login-attempts&gt;<br>        &lt;file-storage&gt;<br>            &lt;files-root&gt;c:\ttserverfiles&lt;/files-root&gt;<br>            &lt;max-diskusage&gt;51200000&lt;/max-diskusage&gt;<br>            &lt;channel-diskquota&gt;5120000&lt;/channel-diskquota&gt;<br>        &lt;/file-storage&gt;<br>        &lt;user-rights&gt;<br>            &lt;channel-creation&gt;true&lt;/channel-creation&gt;<br>            &lt;channel-operators&gt;true&lt;/channel-operators&gt;<br>            &lt;channel-commands&gt;true&lt;/channel-commands&gt;<br>            &lt;modify-subscriptions&gt;true&lt;/modify-subscriptions&gt;<br>            &lt;client-broadcast&gt;false&lt;/client-broadcast&gt;<br>            &lt;view-all-users&gt;true&lt;/view-all-users&gt;<br>            &lt;guest-login&gt;true&lt;/guest-login&gt;<br>            &lt;double-login&gt;true&lt;/double-login&gt;<br>            &lt;forward-audio&gt;true&lt;/forward-audio&gt;<br>            &lt;forward-video&gt;true&lt;/forward-video&gt;<br>            &lt;forward-deskop&gt;true&lt;/forward-desktop&gt;<br>        &lt;/user-rights&gt;<br>    &lt;/general&gt;<br>    &lt;users&gt;<br>        &lt;user&gt;<br>            &lt;username&gt;admin&lt;/username&gt;<br>            &lt;password&gt;mypasswd&lt;/password&gt;<br>            &lt;user-type&gt;2&lt;/user-type&gt;<br>        &lt;/user&gt;<br>    &lt;/users&gt;<br>    &lt;serverbans&gt;<br>        &lt;serverban address="192.168.11.44"&gt;<br>            &lt;bantime&gt;2009/10/12 12:48&lt;/bantime&gt;<br>            &lt;nickname&gt;Benjamin&lt;/nickname&gt;<br>            &lt;username&gt;ben&lt;/username&gt;<br>            &lt;channel-path&gt;/Conf ABC&lt;/channel-path&gt;<br>        &lt;/serverban&gt;<br>    &lt;/serverbans&gt;<br>&lt;/teamtalk&gt;<br></pre>
+</div>
+<p>Here is an explanation of each of the tags in the server
+configuration file:</p>
+<ul>
+  <li><code>&lt;general&gt;</code> This section contains tags related
+to server's configuration.</li>
+</ul>
+<ul>
+  <li><code>&lt;server-name&gt;</code> The server's name.</li>
+  <li><code>&lt;motd&gt;</code> The message of the day (MOTD) which
+will be available to users once they log in. The MOTD supports the
+following variables:
+    <ul>
+      <li>%users% The number of users on the server.</li>
+      <li>%admins% The number of administrators on the server.</li>
+      <li>%uptime% The time the server has been online.</li>
+      <li>%voicetx% The number of KBytes containing audio which has
+been forwarded through the server to users.</li>
+      <li>%voicerx% The number of KBytes containing audio which has
+been received by the server.</li>
+      <li>%lastuser% The nickname of the last user to log on to the
+server.</li>
+    </ul>
+  </li>
+  <li><code>&lt;max-users&gt;</code> The maximum number of users on the
+server.</li>
+  <li><code>&lt;auto-save&gt;</code> If 'true' the server will
+automatically save changes to it configuration file whenever the
+server's configuration is changed. When static channels are either
+created, updated or deleted this will also be automatically saved to
+the server's configuration.</li>
+  <li><code>&lt;bind-ip&gt;</code> The server should bind to this
+IP-address. If the computer running the server has multiple IP-address
+it is advised to specify the IP-address where the server should be
+running.</li>
+  <li><code>&lt;tcpport&gt;</code> The TCP port the server must use.
+Ensure it's not taken by another application.</li>
+  <li><code>&lt;udpport&gt;</code> The UDP port the server must use.
+Ensure it's not taken by another application.</li>
+  <li><code>&lt;server-password&gt;</code> A password which users must
+provide to log on to the server. This password must be provided even if
+the user has a user account on the server.</li>
+  <li><code>&lt;server-log-maxsize&gt;</code> The maximum size in bytes
+of the server log file before it creates a new one. Specifying -1 means
+there is no limit. 0 means don't log events.</li>
+  <li><code>&lt;login-attempts&gt;</code> The maximum number of log in
+attempt with incorrect password before banning a user's IP-address.</li>
+</ul>
+<ul>
+  <li><code>&lt;file-storage&gt;</code> Tags related to storing files.
+    <ul>
+      <li><code>&lt;files-root&gt;</code> If file-sharing is enabled
+uploaded files will be stored at this location.</li>
+      <li><code>&lt;max-diskusage&gt;</code> The maximum number of
+bytes available for storing files on the server.</li>
+      <li><code>&lt;channel-diskquota&gt;</code> The default number of
+bytes available for storing files when a user creates a channel.</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li><code>&lt;user-rights&gt;</code> Tags related to user-rights.
+    <ul>
+      <li><code>&lt;channel-creation&gt;</code> Whether default users,
+i.e. non-administrators, should be allowed to create channels using the
+'join' option.</li>
+      <li><code>&lt;channel-operators&gt;</code> Whether when a new
+channel is created using the 'join' option the user will become
+channel-operator, i.e. the person can kick users from the channel and
+update its settings.</li>
+      <li><code>&lt;channel-commands&gt;</code> Whether users should be
+allowed to send channel-commands, i.e. channel text-messages which are
+prefixed with '/'</li>
+      <li><code>&lt;modify-subscriptions&gt;</code> Whether users can
+subscribe and unsubscribe audio, video, etc. from other users. Usually
+used to ignore certain users.</li>
+      <li><code>&lt;client-broadcast&gt;</code> Whether users, i.e.
+non-administrators, can broadcast messages in similar way as
+administrators.</li>
+      <li><code>&lt;view-all-users&gt;</code> Whether users should be
+allowed to see all users on the server and not only those in their
+channel.</li>
+      <li><code>&lt;guest-login&gt;</code> Whether users can login
+without a user account.</li>
+      <li><code>&lt;double-login&gt;</code> Whether multiple users can
+log in using the same user account.<br>
+      </li>
+      <li><code>&lt;forward-audio&gt;</code> Whether users should be
+allowed to send their packets through the server. If disabled users
+must run in peer to peer mode.</li>
+      <li><code>&lt;forward-video&gt;</code> Whether users should be
+allowed to send their packets through the server. If disabled users
+must run in peer to peer mode.</li>
+      <li><code>&lt;forward-desktop&gt;</code> Whether users should be
+allowed to share desktop application.<br>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li><code>&lt;users&gt;</code> This section contains user accounts.
+    <ul>
+      <li><code>&lt;user&gt;</code> A user account.
+        <ul>
+          <li><code>&lt;username&gt;</code> The username of the user
+account.</li>
+          <li><code>&lt;password&gt;</code> The password of the user
+account.</li>
+          <li><code>&lt;user-type&gt;</code> The type of user. 1 =
+Default user, 2 = Administrator.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li><code>&lt;server-bans&gt;</code> This section contains users who
+have been banned from the server.
+    <ul>
+      <li><code>&lt;serverban</code> address="..."&gt; A banned user
+where the <code>address</code> attribute is the IP-address which has
+been banned. Note that it's the IP-address which is banned and not the
+user who own the account.
+        <ul>
+          <li><code>&lt;bantime&gt;</code> The time of when the ban was
+issued.</li>
+          <li><code>&lt;nickname&gt;</code> The nickname of the user at
+the time of the ban.</li>
+          <li><code>&lt;username&gt;</code> If the user has an account
+on the server it is specified here.</li>
+          <li><code>&lt;channel-path&gt;</code> The channel the user
+was in a the time of the ban.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<pre class="fragment"><br></pre>
+</div>
+</div>
+</div>
+</body>
+</html>

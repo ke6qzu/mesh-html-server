@@ -1,0 +1,1637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1"
+      http-equiv="Content-Type">
+    <title>TeamTalk User Interface Guide</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <center><img alt="BearWare.dk" src="bearware.gif"></center>
+    <a href=toc.html>TeamTalk 4 Help</a>
+    <a href=../index.html>Home</a>
+    <h1>TeamTalk User Interface Guide</h1>
+    This section gives an introduction to the features available in the
+    TeamTalk application. To be able to use the features explained in
+    this
+    tutorial you need to be connected to a server and have joined a
+    channel. Section <a href="quickstart.html">Quick Start</a>
+    describes
+    how to connect and join a channel.<br>
+    <br>
+    Here is an overview of the list of features which are being
+    described
+    in this section:<br>
+    <ul>
+      <li><a href="#mwindow">Main Window</a></li>
+      <ul>
+        <li><a href="#menubar">Menu Bar</a></li>
+        <li><a href="#toolbar">Toolbar</a></li>
+        <li><a href="#channelsview">Channels View</a></li>
+        <li><a href="#volcontrols">Volume Controls</a></li>
+        <li><a href="#chattab">Chat Tab</a></li>
+        <li><a href="#videotab">Video Tab</a></li>
+        <li><a href="#desktopstab">Desktops Tab</a><br>
+        </li>
+        <li><a href="#filestab">Files Tab</a><br>
+        </li>
+      </ul>
+      <li><a href="#clientmenu">Client-Menu</a></li>
+      <ul>
+        <li><a href="#connect">Connect Dialog</a></li>
+        <li><a href="#preferences">Preferences Dialog</a><br>
+        </li>
+      </ul>
+      <li><a href="#memenu">Me-Menu</a></li>
+      <ul>
+        <li><a href="#pushtotalk">Enable Push To Talk Dialog</a></li>
+        <li><a href="#desktopshare">Enable Desktop Sharing Dialog</a><br>
+        </li>
+      </ul>
+      <li><a href="#usersmenu">Users-Menu</a></li>
+      <ul>
+        <li><a href="#subscriptions">Subscriptions-Menu</a></li>
+        <li><a href="#advanced">Advanced-Menu</a></li>
+        <li><a href="#storeaudio">Store Audio to Disk Dialog</a><br>
+        </li>
+      </ul>
+      <li><a href="#channelsmenu">Channels-Menu</a></li>
+      <ul>
+        <li><a href="#createchannel">Create Channel Dialog</a><br>
+        </li>
+      </ul>
+      <li><a href="#servermenu">Server-Menu</a></li>
+      <ul>
+        <li><a href="#useraccounts">User Accounts Dialog</a></li>
+        <li><a href="#bannedusers">Banned Users Dialog</a></li>
+        <li><a href="#serverproperties">Server Properties Dialog</a><br>
+        </li>
+      </ul>
+    </ul>
+    <h2><a name="mwindow"></a>Main Window</h2>
+    The TeamTalk application consists of a menubar, a toolbar, a
+    channels
+    view in the left side with volume controls below and a tab control
+    with
+    four tabs to the right. Between the channels view and the tab
+    control
+    is a so-called splitter which can be used to change the size of the
+    channels view and tab control. <br>
+    <br>
+    The following screenshot is included to help explain the TeamTalk
+    application's user interface.<br>
+    <br>
+    <div align="center"><a name="mainwindow"></a><img alt="Main Window"
+        src="mainwindow.png"><br>
+    </div>
+    <h3><a name="menubar"></a>Menu Bar<br>
+    </h3>
+    In the top of the application are six menu-items: <a
+      href="#clientmenu">Client</a>,
+    <a href="#memenu">Me</a>, <a href="#usersmenu">Users</a>,
+    <a href="#channelsmenu">Channels</a>, <a href="#servermenu">Server</a>
+    and <em>Help</em>. The <em>Client</em>-menu is for configuring the
+    TeamTalk application and connecting to servers. The <em>Me</em>-menu
+gives
+    access to options which should be set for the local user
+    (meaning you), like e.g. changing your nickname or
+    status. The <em>Users</em>-menu is used to control other users,
+    like
+    e.g. changing their sound volume or sending them
+    text-messages. The <em>Channels</em>-menu is used for controlling
+    channels, like e.g. creating new channels or updating existing ones.
+    The <em>Server</em>-menu is for changing or viewing the server's
+    options and finally the <em>Help</em>-menu is for assistance.<br>
+    <h3><a name="toolbar"></a>Toolbar<br>
+    </h3>
+    The toolbar simply provides easy access to common tasks which are
+    also
+    available though the menu items.<br>
+    <ul>
+      <li>Connect button</li>
+      <ul>
+        <li>The first button in the toolbar, which
+          looks like a plug, is for connecting to a server.</li>
+      </ul>
+      <li>Enable Push to Talk button</li>
+      <ul>
+        <li>The second button in the toolbar, which looks like a button,
+          is for enabling a push to talk button. Push to talk is a key
+          combination which must be held down whenever you are talking.</li>
+      </ul>
+      <li>Enable Voice Activation button<br>
+      </li>
+      <ul>
+        <li>The third button, which looks like waves, are for enabling
+          voice activation. Enabling this wil make a slider show up
+          below the
+          channels view. Move this slider left and right either changes
+          the
+          voice activation level.</li>
+      </ul>
+      <li>Enable Video Transmission button<br>
+      </li>
+      <ul>
+        <li>The fourth button, which looks like a webcamera, is for
+          enabling video transmission. Before this can be used a camera
+          must be
+          set up in the <a href="preferences.html#videocapture">Video
+            Capture</a>-tab in <a href="preferences.html">Preferences</a>.
+          Once
+          the camera is started one can click the Video-tab in the tab
+          control
+          to see one self.</li>
+      </ul>
+      <li>Enable Desktop Sharing button<br>
+      </li>
+      <ul>
+        <li>The fifth button, which looks like a blackboard, is for
+          sharing
+          a desktop application with other users in the same channel.</li>
+      </ul>
+      <li>Mute All button<br>
+      </li>
+      <ul>
+        <li>The sixth button in the toolbar, with a speaker icon, is
+          for muting all users in the channel you're participating in,
+          so you can
+          no longer hear them.</li>
+      </ul>
+      <li>Start/stop Recording Audio Files button</li>
+      <ul>
+        <li>The seventh button, which looks like a record button, is for
+          storing audio files to disk.</li>
+      </ul>
+      <li>Show Blinking Icon button</li>
+      <ul>
+        <li>The last button, which looks like a hand, is for enabling
+          the
+          Question status mode. This will make you appear as a user with
+          a blink
+          hand.<br>
+        </li>
+      </ul>
+    </ul>
+    <h3><a name="channelsview"></a>Channels View</h3>
+    The channels view is in the left side of the application above the
+    volume controls. Once you have connected to a server you will see
+    channels and users appearing here. The channels will appear as
+    folder
+    icons and the computer icon in the top is also a channel, namely the
+    root channel, where you will first appear when you connect to a
+    server. The user impersonating you will appear with bold text, so in
+    the <a href="#packetloss">screenshot</a> below
+    <em>Bjoern</em> is me. The blue box surrounding the user-icon means
+    that I'm currently transmitting video, so the other users in the
+    channel can see <i>Bjoern</i> in
+    the <a href="#videotab">Video</a>-tab. The user <em>Ida</em> is
+    also
+    transmitting video but the blinking red line on her name means that
+    the reception from her is very poor (video data is being lost). The
+    user <em>Randi</em> has a green line over her name which means that
+    she's currently transmitting audio, i.e. other users in the channel
+    are hearing her talking. The blackboard behind <em>Randi</em>'s
+    user-icon means that she sharing a desktop application which can be
+    seen in the <a href="#desktopstab">Desktops</a>-tab.<br>
+    <br>
+    <div align="center"><img alt="Packetloss" src="mainwindow.png">
+      <a name="packetloss"></a><br>
+      <div align="left"><a name="packetloss"><br>
+          Notice
+          that <em>Bjoern</em> in the above screenshot has a red star.
+          This
+          means the user is administrator of the server. The user <em>Randi</em>
+          has a yellow star which means she is operator of the channel
+          and can
+          thereby kick people out of the channel and modify the
+          channel's
+          settings. People who are operators are usually the users who
+          created
+          the channel.<br>
+        </a></div>
+    </div>
+    <h3><a name="volcontrols"></a>Volume Controls</h3>
+    The volume controls are placed below the channels view. The first
+    slider with a speaker to the left of it controls the master volume.
+    Changing this increases or decreases the volume for all users. If
+    you
+    only want to change the volume of one person you can select this
+    person
+    and press <code>Ctrl+Left</code> arrow to lower volume and <code>Ctrl+Right</code>
+    arrow to increase the volume. These two keyboard shortcuts are
+    placed
+    in the <a href="#advanced">Advanced</a>-menu. The slider
+    below the master
+    volume with a microphone to the left controls your microphone's gain
+    level, i.e. amplifying your volume so you become louder to other
+    users.
+    To the right of master volume is progressbar with a wave to the left
+    of
+    it. This progressbar shows how much sound your microphone is picking
+    up. If voice activation is enabled the there will be a slider below
+    the
+    progressbar which sets the voice activation level. When using the
+    voice
+    activation slider to set the voice activation level ensure that it
+    is
+    not active all the time, since it can be annoying for other users.
+    When
+    voice activation becomes active the user in the channels view
+    impersonating you will become green.<br>
+    <h3><a name="chattab"></a>Chat Tab</h3>
+    The <i>Chat</i>-tab is used for text chatting with the people in
+    your
+    channel.
+    A screenshot is shown there:<br>
+    <br>
+    <div align="center"><img alt="Chat tab" src="mainwindow.png">
+    </div>
+    <br>
+    The Chat-tab also maintains a list of events which occurred in your
+    channel, like
+    e.g. when a new user joins or leaves the channel. To send a text
+    message to all users in your channel simply type in the line to the
+    left of the <em>Send</em>-button. If the server supports channel
+    commands it's also possible to send commands to the server using
+    channel text messages. Simply type <code>/help</code> to get a list
+    of
+    supported commands.<br>
+    <h3><a name="videotab"></a>Video Tab</h3>
+    The <i>Video</i>-tab contains a grid of all the users who are
+    currently
+    transmitting video to the channel. The users who are transmitting
+    video
+    will have a blue frame around their user icon in the channels view
+    as
+    can
+    be seen in the following screenshot:<br>
+    <br>
+    <div align="center"><img alt="Video tab" src="videotab.png"><br>
+      <br>
+    </div>
+    The button with the '-' sign in the Video-tab can be used to remove
+    users from the grid so you will no longer receive video data from
+    that
+    user. Pressing the button with the '+' sign will add the user to the
+    grid again. The button with the two frames, one above the other, is
+    for detaching a user from the grid so the user will be shown in a
+    separate window. The last button the Video-tab is for starting and
+    stopping your video camera. If you want other users to also see
+    video
+    sent from you press the video camera in the toolbar to the right of
+    the voice activation icon.<br>
+    <h3><a name="desktopstab"></a>Desktops Tab<br>
+    </h3>
+    The <i>Desktops</i>-tab contains a grid of shared desktop
+    applications. Here is a screenshot of a shared desktop application:<br>
+    <br>
+    <div align="center"><img alt="Desktops tab" src="desktopstab.png"><br>
+    </div>
+    <br>
+    Moving your mouse over the desktop window will show who owns the
+    desktop. Press and hold the mouse to scroll the window if it's
+    bigger
+    than the Desktops tab. Check out the <a href="#desktopshare">Desktop
+Share
+      section</a> on how to share a desktop application.<br>
+    <h3><a name="filestab"></a>Files Tab</h3>
+    If the server allows, users can upload and download files to and
+    from a
+    channel. When you join a channel you can see the files which are
+    currently available in the <em>Files</em>-tab as shown in this
+    screenshot:<br>
+    <br>
+    <div align="center"><img alt="Files tab" src="filestab.png"><br>
+      <div align="left"><br>
+        Only users who have a user account on the server can upload
+        files.
+        Anyone can download files in a channel. Only the owner of a
+        file, an
+        administrator or an operator of a channel can delete a file.
+        Instead of
+        using the upload and download button in the <em>Files-</em>tab
+        one
+        can also drag/drop files from Windows' Explorer.<br>
+      </div>
+    </div>
+    <h2><a name="clientmenu"></a>Client-Menu</h2>
+    <div align="left">The <em>Client-</em>menu is used for connecting
+      to
+      TeamTalk servers and configuring the TeamTalk application.
+      <br>
+      <br>
+      <div align="center"><img alt="Client Menu" src="mwclientmenu.png"><br>
+      </div>
+    </div>
+    <br>
+    Each of the menu items in the <em>Client</em> menu are described
+    here:<br>
+    <ul>
+      <li>New Client Instance</li>
+      <ul>
+        <li>Start a new TeamTalk instance, so you're able to connect to
+          multiple servers.<br>
+        </li>
+      </ul>
+      <li><em>Connect</em></li>
+      <ul>
+        <li>To quickly connect to just a server or one you have
+          connected to recently you can press <em>Connect</em>. For
+          more
+          information read section <a href="#connect">Connect Dialog</a>.<br>
+        </li>
+      </ul>
+      <li><em>Preferences</em></li>
+      <ul>
+        <li>Pressing&nbsp; <em>Preferences</em> is used for configuring
+          the TeamTalk application. Each of these options are explained
+          in detail
+          in the following sections. For more information read section <a
+            href="#preferences">Preferences Dialog</a>.</li>
+      </ul>
+      <li>Exit</li>
+      <ul>
+        <li>Quit the TeamTalk application.<br>
+        </li>
+      </ul>
+    </ul>
+    <h3><a name="connect"></a>Connect Dialog</h3>
+    In the Connect dialog you can specify the TeamTalk server you want
+    to
+    connect to. It also maintains a list of publicly available TeamTalk
+    servers you can connect
+    to. An example
+    of public TeamTalk servers are
+    shown in the screenshot below. The public servers will be shown in
+    green.<br>
+    <br>
+    <div align="center"><img alt="Connect Dialog" src="connect.png"><br>
+      <div align="left"><br>
+        If you manually want to connect to a TeamTalk server then the
+        person
+        who is running the server must
+        provide the information for the fields <em>Host IP-address</em>,
+        <em>TCP
+          port</em> and <em>UDP port</em>. Some servers also require
+        the user to
+        enter a password to log on. This can be put in the <em>Server
+          Password</em>
+        field. If you have also been provided a user account you can
+        input this
+        information by clicking <em>Login using user account</em>. To
+        join a
+        specific channel once you have logged on to the server can be
+        done by
+        filling out <em>Channel</em> and <em>Password</em> fields.
+        Once you
+        have filled out all the information you have been provided you
+        can save
+        the server to the Server List by filling the <i>Entry name</i>
+        field
+        and afterwards click <i>Save</i>. Finally click <i>Connect</i>
+        to
+        connect to the server.<br>
+        <br>
+        Learn more about setting up user accounts by
+        read the section on <a href="serversetup.html">configuring
+          TeamTalk
+          servers</a> or the section about <a
+          href="userinterface.html#useraccounts">User Accounts</a><br>
+        <br>
+        If you want others to connect to the same TeamTalk server as
+        you, you
+        can press <em>Generate .tt File</em> so you'll get a file you
+        can
+        email to the users who should also connect to the server. More
+        information on .tt files is available <a href="ttfiles.html">here</a>.<br>
+        <h3><a name="preferences"></a>Preferences Dialog</h3>
+        The Preferences dialog is used for configuring the TeamTalk
+        application. Users should at least run through the <a
+          href="preferences.html#general">General</a> and
+        <a href="preferences.html#soundsystem">Sound System</a> tab to
+        ensure
+        everything is configured properly.<br>
+        <br>
+        <div align="center"><img alt="Preferences" src="general.png"><br>
+          <div align="left"><br>
+            Please read section <a href="preferences.html">TeamTalk
+              Preferences</a>
+            for a guide on how to configure TeamTalk.<br>
+            <h2><a name="memenu"></a>Me-Menu</h2>
+            The menu items in the menu group <i>Me</i> are options you
+            want to
+            perform on
+            yourself. The possible options are shown here.<br>
+            <br>
+            <div align="center"><img alt="Me menu" src="mwmemenu.png"><br>
+            </div>
+            <br>
+            Each of the menu items in the <em>Me</em>-menu are
+            described here:<br>
+            <ul>
+              <li><em>Change Nickname</em></li>
+              <ul>
+                <li>The will change your name on the server. Your
+                  current nickname
+                  is the one shown in bold in the <a
+                    href="#channelsview">channels view</a>.
+                  The
+                  nickname
+                  is
+                  simply
+                  a
+                  display
+                  name.
+                  It
+                  has
+                  no
+                  relation
+                  to
+                  your
+                  username
+                  (if
+                  you
+                  have
+                  a
+                  user
+                  account).</li>
+              </ul>
+              <li><em>Change Status</em></li>
+              <ul>
+                <li>This is used to change your status mode, like e.g. <em>Available,</em>
+                  <em>Away</em>, <i>Question-mode</i> and set a message
+                  regarding
+                  your current status.</li>
+              </ul>
+              <li><em>Enable Push To Talk</em></li>
+              <ul>
+                <li>Push To Talk is a key combination you need to hold
+                  down
+                  whenever you are talking. Using a <a
+                    href="#pushtotalk">Push To Talk</a>
+                  key combination is
+                  especially usefull if you are using speaker and have
+                  problems with
+                  echos.</li>
+              </ul>
+              <li><em>Enable Voice Activation</em></li>
+              <ul>
+                <li>Instead of using <a href="#pushtotalk">Push To Talk</a>
+                  one
+                  can have TeamTalk detect when
+                  you are talking and then start transmitting.</li>
+              </ul>
+              <li><em>Enable Video Transmission</em></li>
+              <ul>
+                <li>Enable this item to start transmitting video to
+                  other users in
+                  your channel. Note that you need to configure your web
+                  camera before
+                  doing this. The <a
+                    href="quickstart.html#confwebcamera">Quick Start</a>
+                  section explains how to do this.</li>
+              </ul>
+              <li><i>Enable Desktop Sharing</i></li>
+              <ul>
+                <li>Share an application on your desktop with other
+                  users in your
+                  channel. This can e.g. be used for doing a
+                  presentation. See the <a href="#desktopshare">Desktop
+                    Sharing dialog</a> for more information.<br>
+                </li>
+              </ul>
+            </ul>
+            <h3><a name="pushtotalk"></a>Push To Talk Dialog</h3>
+            Using Push To Talk is a good way to ensure people do not
+            overlap each
+            other when they are talking and to avoid echos from
+            speakers. To set up
+            a hotkey simply hold down the keys you want to use as your
+            key
+            combination and release them all again. The Push To Talk
+            dialog will
+            show the keys you're holding down like here.<br>
+            <br>
+            <div align="center"><img alt="Push To Talk"
+                src="pushtotalk.png"><br>
+            </div>
+            <br>
+            Using <code>Ctrl</code> is a good choice for a Push To Talk
+            key. Note
+            that using regular keys can make Windows beep unlike when
+            using
+            non-modifier keys like <code>Ctrl</code>, <code>Alt</code>,
+            <code>Shift</code>.
+            Therefore
+            <code>Ctrl</code> or <code>Alt</code> or <code>Shift</code>
+            is recommended.<br>
+            <h3><a name="desktopshare"></a>Enable Desktop Sharing Dialog</h3>
+            The window of an application on your desktop can be shared
+            with other
+            users in the same channel. This can be used for doing a
+            presentation in
+            an eLearning scenario. The Desktop Sharing dialog is shown
+            here:<br>
+            <br>
+            <div align="center"><img alt="Desktop Sharing Dialog"
+                src="desktopshare.png"><br>
+              <div align="left"><br>
+                Each of the items in the dialog are explained here:<br>
+                <ul>
+                  <li><i>Share entire desktop</i></li>
+                  <ul>
+                    <li>Instead of sharing only one application you can
+                      share your
+                      entire desktop. Note that this may require a lot
+                      of bandwidth usage.</li>
+                  </ul>
+                  <li><i>Share active window</i></li>
+                  <ul>
+                    <li>Share the window on your desktop which currently
+                      have keyboard
+                      and mouse focus. This option is useful if you
+                      intend to show several
+                      application windows during your presentation.</li>
+                  </ul>
+                  <li><i>Share specific window</i></li>
+                  <ul>
+                    <li>Only share a single application window and it
+                      has to be the one
+                      with the title specified in the selection box.</li>
+                  </ul>
+                  <li><i>Color mode</i></li>
+                  <ul>
+                    <li>The more colors you use for showing your
+                      application the better
+                      it looks, but it also requires mode bandwidth.</li>
+                  </ul>
+                  <li><i>Update interval</i></li>
+                  <ul>
+                    <li>Enable this option if the window you're sharing
+                      changes during
+                      your presentation. TeamTalk will then update the
+                      window on a timely
+                      basis.</li>
+                  </ul>
+                  <li><i>Share desktop cursor</i></li>
+                  <ul>
+                    <li>Enable this option if remote users should be
+                      able to see where
+                      your mouse cursor is point to.<br>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <h2><a name="usersmenu"></a>Users-Menu</h2>
+            The menu items in the <em>Users-</em>menu are used for
+            changing the
+            settings of other users and interacting with them. The
+            Users-menu is
+            shown here:<br>
+            <br>
+            <div align="center"><img alt="Users Menu"
+                src="mwusersmenu.png"><br>
+            </div>
+            <br>
+            Each of the menu items in the <em>Users</em> menu are
+            described here.
+            A user has to be selected in the <a href="#channelsview">channels
+              view
+            </a>for the <em>Users</em> menu items to be active.<br>
+            <ul>
+              <li><em>View User Information</em></li>
+              <ul>
+                <li>Use this menu item to get extended information about
+                  a user,
+                  like e.g. username, user type and packet reception.<br>
+                </li>
+              </ul>
+              <li><em>Messages</em></li>
+              <ul>
+                <li>The menu item is for sending user to user text
+                  messages. A
+                  message dialog will pop up on the user's computer when
+                  you send him a
+                  message. This option can however be disabled in the <a
+                    href="preferences.html#display">Display</a> tab in <a
+                    href="preferences.html">Preferences</a>.<br>
+                </li>
+              </ul>
+              <li><em>Mute</em></li>
+              <ul>
+                <li>Mute the user so you will not hear audio from this
+                  person. Note
+                  that you will still receive audio data from the user.
+                  To also disable
+                  this look in the <a href="#subscriptions">Subscriptions</a>
+                  section.<br>
+                </li>
+              </ul>
+              <li><em>Volume</em></li>
+              <ul>
+                <li>If a user is either too loud or too low one can use
+                  the volume
+                  dialog to turn the volume up and down. Most users
+                  would probably prefer
+                  to use the volume controls in the <a href="#advanced">Advanced</a>-menu.<br>
+                </li>
+              </ul>
+              <li><em>Op</em></li>
+              <ul>
+                <li>If one logged on to the server as administrator or
+                  one is
+                  already operator of a channel it's possible to make
+                  other people in the
+                  channel operators. When <a href="#createchannel">creating
+                    a channel</a>
+                  one can also set an Operator
+                  password which can be used with the <code>/op</code>
+                  channel command
+                  to become operator again. Type the <code>/help</code>
+                  channel command
+                  to get other options.<br>
+                </li>
+              </ul>
+              <li><em>Kick</em></li>
+              <ul>
+                <li>Kick the user out of the channel.<br>
+                </li>
+              </ul>
+              <li><em>Kick and Ban</em></li>
+              <ul>
+                <li>Kick the user of the server and ban the user's
+                  IP-address. Only
+                  administrator can ban users.<br>
+                </li>
+              </ul>
+              <li><em>Stream Audio File to User</em></li>
+              <ul>
+                <li>Use this option to stream an wave-file to a user.
+                  Only
+                  administrators can use this option and the
+                  administrator is not allowed
+                  to be in the same channel. To stream an audio file to
+                  the current
+                  channel use the <a href="#channelsmenu">Channels</a>-menu's
+option
+                  to stream audio files.</li>
+              </ul>
+              <li><i>Subscriptions</i></li>
+              <ul>
+                <li>See <a href="#subscriptions">Subscriptions</a>
+                  section.</li>
+              </ul>
+              <li><i>Advanced</i></li>
+              <ul>
+                <li>See <a href="#advanced">Advanced</a>-menu.<br>
+                </li>
+              </ul>
+              <li><em>Mute All</em></li>
+              <ul>
+                <li>Mute the sound from all users.</li>
+              </ul>
+              <li>Store Audio to Disk</li>
+              <ul>
+                <li>See <a href="#storeaudio">Store Audio to Disk</a>
+                  section.<br>
+                </li>
+              </ul>
+            </ul>
+            <h3><a name="subscriptions"></a>Subscriptions-Menu</h3>
+            Subscriptions are used for ignoring certain data or events
+            from a user.
+            If e.g. you do not want to receive text messages from a
+            certain user
+            you can tell the server that you want to unsubscribe text
+            messages from
+            that user.<br>
+            <br>
+            Each of the menu items in the <em>Subscriptions </em>menu
+            are
+            described here.<br>
+            <ul>
+              <li><em>User Messages</em></li>
+              <ul>
+                <li>If checked you accept text messages from this user.</li>
+              </ul>
+              <li><em>Channel Messages</em></li>
+              <ul>
+                <li>If checked you accept channel text messages from
+                  this user.</li>
+              </ul>
+              <li><em>Broadcast Messages</em></li>
+              <ul>
+                <li>If checked you accept broadcast messages from this
+                  user. Only
+                  administrators can by default broadcast text messages.<br>
+                </li>
+              </ul>
+              <li><em>Audio</em></li>
+              <ul>
+                <li>If checked you accept audio from this user. Unlike <em>Mute</em>
+                  in <em><a href="#usersmenumenu">Users</a>-</em>menu
+                  disabling this will
+                  also stop the user from
+                  sending audio data to you.<br>
+                </li>
+              </ul>
+              <li><em>Video</em></li>
+              <ul>
+                <li>If checked you accept video from this user.
+                  Unsubscribing video
+                  is the same as pressing the minus button in the <a
+                    href="#videotab">Video-tab</a>.</li>
+              </ul>
+              <li><i>Desktop</i></li>
+              <ul>
+                <li>If checked you accept shared desktop windows from
+                  this user.
+                  Unsubscribing desktop is the same as pressing the
+                  minus button in the <a href="#desktopstab">Desktops-tab</a>.<br>
+                </li>
+              </ul>
+              <li><em>Intercept User Messages</em></li>
+              <ul>
+                <li>Receive all the user's text messages, both to use
+                  and to all
+                  other users the user is sending to. In other words
+                  this is like spying
+                  on the user. Only administrators can do this.</li>
+              </ul>
+              <li><em>Intercept Channel Messages</em></li>
+              <ul>
+                <li>Receive all the user's channel text messages, even
+                  if you're
+                  not in the user's channel. Only administrators can do
+                  this.</li>
+              </ul>
+              <li><em>Intercept Audio</em></li>
+              <ul>
+                <li>Receive audio from this user, even if you're not in
+                  the same
+                  channel. Only administrators can do this.</li>
+              </ul>
+              <li><em>Intercept Video</em></li>
+              <ul>
+                <li>Receive video from this user, even if you're not in
+                  the same
+                  channel. Only administrators can do this.</li>
+              </ul>
+              <li><i>Intercept Desktop</i></li>
+              <ul>
+                <li>Receive shared desktop windows from this user, even
+                  if you're
+                  not in the same channel. Only administrators can do
+                  this.</li>
+              </ul>
+            </ul>
+            If there's certain subscriptions you always want to have
+            disabled by
+            default you can set these in the <a
+              href="preferences.html#connection">Connection-tab</a>
+            of the <a href="#preferences">Preferences</a> dialog.<br>
+            <h3><a name="advanced"></a>Advanced-Menu</h3>
+            This main purpose of the <em>Advanced</em>-menu is to
+            provide
+            keyboard shortcuts to common tasks.<br>
+            <br>
+            Each of the menu items in the <em>Advanced</em>-menu are
+            described
+            here.<br>
+            <ul>
+              <li><em>Increase Volume (+10)</em></li>
+              <ul>
+                <li>This is basically a shortcut to <em>Volume</em> in
+                  <a href="#usersmenu">Users</a>-menu.<br>
+                </li>
+              </ul>
+              <li><em>Lower Volume (-10)</em></li>
+              <ul>
+                <li>This is basically a shortcut to <em>Volume</em> in
+                  <a href="#usersmenu"><em>Users</em></a>-menu.</li>
+              </ul>
+              <li><em>Store User(s) for Move</em></li>
+              <ul>
+                <li>Store the selected users so they can be moved to
+                  another
+                  channel.<br>
+                </li>
+              </ul>
+              <li><em>Move User(s)</em></li>
+              <ul>
+                <li>Move the selected users to the selected channel.</li>
+              </ul>
+              <li>Allow Voice Transmission</li>
+              <ul>
+                <li>When a channel is configured in <a
+                    href="#createchannel">Classroom</a>
+                  mode this menu item can be checked to allow the user
+                  to talk in the
+                  channel. This menu item is included due to its
+                  keyboard shortcut.<br>
+                </li>
+              </ul>
+              <li>Allow Video Transmission</li>
+              <ul>
+                <li>When a channel is configured in <a
+                    href="#createchannel">Classroom</a>
+                  mode this menu item can be checked to allow the user
+                  to send video to
+                  the channel. This menu item is included due to its
+                  keyboard shortcut.</li>
+              </ul>
+              <li>Allow Desktop Transmission</li>
+              <ul>
+                <li>When a channel is configured in <a
+                    href="#createchannel">Classroom</a>
+                  mode this menu item can be checked to allow the user
+                  to share desktop
+                  windows to the channel. This menu item is included due
+                  to its keyboard
+                  shortcut.</li>
+              </ul>
+            </ul>
+            <h3><a name="storeaudio"></a>Store Audio to Disk Dialog</h3>
+            Conversations with other users can be stored to audio files
+            using the <i>Store
+              Audio
+              to
+              Disk</i> item in the <a href="#usersmenu">Users</a>-menu
+            or
+            pressing the recorder button in the toolbar. The follow
+            dialog will
+            then appear:<br>
+            <br>
+            <div align="center"><img alt="Store Audio to Disk dialog"
+                src="storeaudio.png"><br>
+            </div>
+            <br>
+            Each of the items in the audio storage dialog are explained
+            here:<br>
+            <ul>
+              <li>Storage mode</li>
+              <ul>
+                <li>Single audio file for all users</li>
+                <ul>
+                  <li>Audio from all users in your channel is merged
+                    into a single
+                    file.</li>
+                </ul>
+                <li>Separate audio file for each user</li>
+                <ul>
+                  <li>Each user in your channel will have a separate
+                    audio file
+                    every time the person starts talking.</li>
+                </ul>
+              </ul>
+              <li>Audio file format</li>
+              <ul>
+                <li>The file format to use for storing audio files. By
+                  default only
+                  Wave-format is support but if you download the LAME
+                  MP3 encoder you can
+                  store to MP3 format by placing the <font
+                    face="Courier New, Courier, monospace">lame_enc.dll</font>
+                  file in the
+                  same directory as the TeamTalk executable. <font
+                    face="Courier New, Courier, monospace">lame_enc.dll</font>
+                  is
+                  not included in the TeamTalk distribution due to MP3
+                  licensing.</li>
+              </ul>
+              <li>Folder for audio files</li>
+              <ul>
+                <li>The file name for the audio files is generated
+                  automatically
+                  but the folder for storing the files has to be
+                  specified in this field.<br>
+                </li>
+              </ul>
+            </ul>
+            <h2><a name="channelsmenu"></a>Channels-Menu</h2>
+            The menu items in the <em>Channels</em> menu become
+            available when you
+            select a channel in the <a href="#channelsview">channels
+              view</a>. All
+            the channel options are shown here:<br>
+            <br>
+            <div align="center"><img alt="Channels Menu"
+                src="mwchannelsmenu.png"><br>
+            </div>
+            <br>
+            Each of the menu items in the <em>Channels</em> menu are
+            described
+            here.<br>
+            <ul>
+              <li><em>Join Channel</em></li>
+              <ul>
+                <li>Join the currently selected channel.<br>
+                </li>
+              </ul>
+              <li><em>View Channel Info</em></li>
+              <ul>
+                <li>View channel information about the selected channel.
+                  Details
+                  about a channel are described in <a
+                    href="#createchannel">Create
+                    Channel Dialog</a>.<br>
+                </li>
+              </ul>
+              <li><em>Create Channel</em></li>
+              <ul>
+                <li>Create a new channel. Details about a channel are
+                  described in <a href="#createchannel">Create Channel
+                    Dialog</a>.</li>
+              </ul>
+              <li><em>Update Channel</em></li>
+              <ul>
+                <li>Update an existing channel. Only administrators and
+                  channel
+                  operators can change the settings of an already
+                  existing channel. Note
+                  that it is not possible to change the audio codec of a
+                  channel when
+                  there are users in the channel. Details about a
+                  channel is described in <a href="#createchannel">Create
+                    Channel Dialog</a>.</li>
+              </ul>
+              <li><em>Delete Channel</em></li>
+              <ul>
+                <li>Delete the selected channel. Only administrators can
+                  do this.<br>
+                </li>
+              </ul>
+              <li><em>Stream Audio File to Channel</em></li>
+              <ul>
+                <li>Replace your microphone input with a wave-file.
+                  People in your
+                  channel when then hear the .wav file and no you. Click
+                  this menu item
+                  again to stop the audio file. Currently only .wav
+                  files are supported.<br>
+                </li>
+              </ul>
+              <ul>
+              </ul>
+              <li><em>Upload File</em></li>
+              <ul>
+                <li>Upload a file to your channel. To upload a file a
+                  user must
+                  have a <a href="#useraccounts">user account</a> on
+                  the server. An
+                  administrator can upload a file
+                  to any channel. Read section <a href="#filestab">Files-tab</a>
+                  for
+                  more information on handing files. Note that the
+                  channel must have a
+                  disk quota to upload a file. The disk quota is
+                  explained in section <a href="#createchannel">Create
+                    Channel Dialog</a>.</li>
+              </ul>
+              <li><em>Download File</em></li>
+              <ul>
+                <li>Download the file selected in <a href="#filestab">Files-tab</a>.<br>
+                </li>
+              </ul>
+              <li><em>Delete File</em></li>
+              <ul>
+                <li>Delete the file selected in <a href="#filestab">Files-tab</a>.<br>
+                </li>
+              </ul>
+            </ul>
+            <h3><a name="createchannel"></a>Create Channel Dialog</h3>
+            To chat with other users in TeamTalk one has to either
+            create a channel
+            or join an existing channel. A new channel can be created by
+            pressing
+            F7 and the following dialog will show up:<br>
+            <br>
+            <div align="center"><img alt="Create Channel Dialog"
+                src="createchannel.png"><br>
+            </div>
+            <br>
+            Each of the fields in the create channel dialog are
+            described here:<br>
+            <ul>
+              <li><em>Channel Path</em></li>
+              <ul>
+                <li>Each channel can have subchannels which again can
+                  have
+                  subchannels. In TeamTalk channels are separated with <code>/</code>
+                  and the full path of your new channel will be
+                  displayed here.<br>
+                </li>
+              </ul>
+              <li><em>Channel name</em></li>
+              <ul>
+                <li>The name of your new channel. Ensure that <code>/</code>
+                  is
+                  not in the name.<br>
+                </li>
+              </ul>
+              <li><em>Topic</em></li>
+              <ul>
+                <li>Each channel can have a topic which both users who
+                  are in the
+                  channel and who are not in the channel can read. Only
+                  administrators
+                  and channel operator can change the topic of a channel
+                  once it has been
+                  created.<br>
+                </li>
+              </ul>
+              <li><em>Password</em></li>
+              <ul>
+                <li>The password required to join the channel
+                  (optional).<br>
+                </li>
+              </ul>
+              <li><em>Operator password</em></li>
+              <ul>
+                <li>The first person to create a new channel will
+                  automatically
+                  become operator of that channel. This means the user
+                  can kick people
+                  out of the channel and update its settings later on.
+                  If the person
+                  leaves the channel at some point and comes back that
+                  person can click
+                  the <i>Op</i> item in the <a href="#usersmenu">Users</a>-menu
+                  to become
+                  operator again.<br>
+                </li>
+              </ul>
+              <li><em>Max users</em></li>
+              <ul>
+                <li>The maximum number of users allowed in the channel.
+                  This field
+                  is only available to administrators.<br>
+                </li>
+              </ul>
+              <li><em>Disk quota (KBytes)</em></li>
+              <ul>
+                <li>The maximum number of KBytes available for file
+                  storage in the
+                  channel. This field is only available to
+                  administrators. The default
+                  value for <i>Disk Quota</i> is changed in <a
+                    href="#serverproperties">Server
+                    Properties</a>.<br>
+                </li>
+              </ul>
+              <li><em>Static channel (persistent)</em></li>
+              <ul>
+                <li>By default a channel disappears after the last user
+                  leaves the
+                  channel. Administrators can, however, create channels
+                  which will
+                  persist on the server even when all users have left.<br>
+                </li>
+              </ul>
+              <li><em>Echo channel (hear yourself)</em></li>
+              <ul>
+                <li>This type of channel can be used to do an echo test,
+                  so you can
+                  hear yourself.<br>
+                </li>
+              </ul>
+              <li><em>No interruptions (no simultaneous audio
+                  transmission)</em></li>
+              <ul>
+                <li>If this option is enabled only one person can talk
+                  in the
+                  channel. In other words where will be no overlapping
+                  conversations. To
+                  talk in this type of channel you must wait until the
+                  channel becomes
+                  "silent". In <a href="preferences.html#soundevents">Sound
+                    Events</a>
+                  in Preferences there's an option to hear a sound when
+                  a
+                  channel is "free for chat".</li>
+              </ul>
+              <li>Classroom (operator-controlled transmission)</li>
+              <ul>
+                <li>If this option is enabled the channel operator can
+                  control who
+                  is allowed to talk, send video and share desktops in
+                  the channel.</li>
+              </ul>
+              <li><i>Echo video (see own video stream)</i></li>
+              <ul>
+                <li>To option is mainly included to test the video
+                  encoding
+                  properties. A user is able to see how the person's
+                  video looks after it
+                  has been encoded.</li>
+              </ul>
+              <li><i>Echo desktop (see your shared desktop)</i></li>
+              <ul>
+                <li>If <a href="#desktopshare">desktop sharing</a> is
+                  enabled have
+                  his option enabled make it possible to see the window
+                  which is being
+                  shared with other users.</li>
+              </ul>
+              <li style="font-style: italic;">Operator receive only
+                (only operator see and hear users)</li>
+              <ul>
+                <li>This channel type can be used for reducing network
+                  traffic when e.g. TeamTalk is used for teaching. Only
+                  server administrators and operators of a channel will
+                  see and hear users in the channel.<br>
+                </li>
+              </ul>
+              <li><em>Codec Type</em></li>
+              <ul>
+                <li>In TeamTalk 4 each channel must specify which audio
+                  codec all
+                  users in the channel must use to join the channel.
+                  TeamTalk currently
+                  supports <em>Speex</em> and <em>CELT</em>. Speex is
+                  recommende if you
+                  just want to talk to other people, whereas <em>CELT</em>
+                  is
+                  recommended if you also want to hear music in the
+                  channel. <em>CELT</em>
+                  has an option to use <em>Stereo</em> but be aware
+                  when choosing this
+                  because many people do not have a microphone which
+                  supports stereo and
+                  can therefore not talk in the channel. Therefore <em>Mono</em>
+                  is
+                  recommended.<br>
+                </li>
+              </ul>
+              <li><em>Quality</em></li>
+              <ul>
+                <li>Increasing the quality will require more bandwidth
+                  but the
+                  sound quality will get better. Ensure to use a setting
+                  which is not
+                  higher than everyone you want to talk to have an
+                  Internet connection
+                  which supports the required bandwidth.</li>
+              </ul>
+              <li>Enable fixed audio volume for all users</li>
+              <ul>
+                <li>In most cases users have microphones with different
+                  audio
+                  volume levels which makes some users louder than
+                  others. Enabling this
+                  option ensures that all users in the channel speaks at
+                  the same audio
+                  volume level. This option is disabled by default
+                  because it may reduce
+                  audio quality. It is important to enable this option
+                  if users are using <a
+                    href="preferences.html#soundsystem">echo
+                    cancellation</a>.<br>
+                </li>
+              </ul>
+              <li>Enable denoising</li>
+              <ul>
+                <li>Enable this option if all users should be forced to
+                  remove
+                  noise before transmitting audio to the channel. It is
+                  important to
+                  enable this option if users are using <a
+                    href="preferences.html#soundsystem">echo
+                    cancellation</a>.</li>
+              </ul>
+            </ul>
+            <h2><a name="servermenu"></a>Server-Menu</h2>
+            The <em>Server</em>-menu is mainly intended for server
+            administrators
+            to administrate users who have access to the server. The <em>Server-</em>menu
+            contains
+            the
+            items
+            shown
+            here:<br>
+            <br>
+            <div align="center"><img alt="Server Menu"
+                src="mwservermenu.png"><br>
+            </div>
+            <br>
+            Each of the menu items in the <em>Server</em>-menu are
+            described here.<br>
+            <ul>
+              <li><em>User Accounts</em></li>
+              <ul>
+                <li>List all user accounts on the server and
+                  administrate existing
+                  ones. Only administrators can do this. More is
+                  explained in the User
+                  Accounts Dialog. <br>
+                </li>
+              </ul>
+              <li><em>Banned Users</em></li>
+              <ul>
+                <li>List all the users who are banned from the server.
+                  Users are
+                  banned based on their IP-address. Since user's
+                  IP-addresses often
+                  change from day to day it might be that a user who was
+                  previously
+                  banned can log on to the server again a day or two
+                  later. Only
+                  administrators can list the banned users on a server.
+                  More is explained
+                  in section <a href="#bannedusers">Banned Users
+                    Dialog.</a></li>
+              </ul>
+              <li>Online Users</li>
+              <ul>
+                <li>List all users who are currently connected to the
+                  server, also
+                  those who are not in a channel.<br>
+                </li>
+              </ul>
+              <li><em>Broadcast Message</em></li>
+              <ul>
+                <li>Broadcast a message to all users on the server. The
+                  message
+                  will appear in the Chat-window. Note that only
+                  administrators can
+                  broadcast messages.<br>
+                </li>
+              </ul>
+              <li><em>Server Properties</em></li>
+              <ul>
+                <li>See the server's properties and change them if
+                  logged on as
+                  administrator. More is explained in section <a
+                    href="#serverproperties">Server
+                    Properties
+                    Dialog</a>.<br>
+                </li>
+              </ul>
+              <li><em>Save Configuration</em></li>
+              <ul>
+                <li>Save the server's current state, i.e. save the
+                  current server
+                  properties and all static channels. If <em>Auto save
+                    server changes</em>
+                  is checked in Server Properties all new static
+                  channels are save
+                  automatically. Also channels which are deleted are
+                  removed from the
+                  server's configuration.</li>
+              </ul>
+              <li>Server Statistics</li>
+              <ul>
+                <li>Get incoming and outgoing bandwidth usage.<br>
+                </li>
+              </ul>
+            </ul>
+            <h3><a name="useraccounts"></a>User Accounts Dialog</h3>
+            For optimal security it's best that all users who log on
+            your server
+            have a user account so it's possible to keep track of who is
+            doing what
+            on the server. Here is shown the <em>User Accounts</em>-dialog.<br>
+            <br>
+            <div align="center"><img alt="User Accounts Dialog"
+                src="useraccounts.png"><br>
+              <div align="left"><br>
+                The <em>Active Users</em> list contains all the user
+                accounts on the
+                server. The remaining items are explained here:<br>
+                <ul>
+                  <li><em>Username</em></li>
+                  <ul>
+                    <li>The username the new user account.</li>
+                  </ul>
+                  <li><em>Password</em></li>
+                  <ul>
+                    <li>The password of the new user account.</li>
+                  </ul>
+                  <li><em>User type</em></li>
+                  <ul>
+                    <li>Currently TeamTalk supports two types of users,
+                      Default User
+                      and Administrator. Administrator have full rights
+                      to everything whereas
+                      default users only have limited rights.</li>
+                  </ul>
+                  <li><i>Note</i></li>
+                  <ul>
+                    <li>Information about the user account can be put
+                      here.</li>
+                  </ul>
+                  <li><i>Initial Channel</i></li>
+                  <ul>
+                    <li>Once the user with this account logs on to the
+                      server the
+                      person should be moved to the specified channel.
+                      Note this requires
+                      that the user is running TeamTalk 4.3 or later.</li>
+                  </ul>
+                  <li>Auto-Operator Channels<br>
+                  </li>
+                  <ul>
+                    <li><i>Selected Channels</i></li>
+                    <ul>
+                      <li>The user with the specified user account will
+                        automatically
+                        become channel-operator in the listed channels.</li>
+                    </ul>
+                    <li><i>Available Channels</i></li>
+                    <ul>
+                      <li>The list of channels where a user can
+                        automatically become
+                        channel-operator. Only <a href="#createchannel">static
+                          channels</a>
+                        are supported for auto-operator mode.</li>
+                    </ul>
+                  </ul>
+                  <li><em>Clear</em></li>
+                  <ul>
+                    <li>Clear the fields for the user account.</li>
+                  </ul>
+                  <li><em>Add/Update</em></li>
+                  <ul>
+                    <li>Create or update a user account.</li>
+                  </ul>
+                  <li><em>Delete</em></li>
+                  <ul>
+                    <li>Delete the seleced user account in the <i>Active
+                        Users</i>
+                      list.<br>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <h3><a name="bannedusers"></a>Banned Users Dialog</h3>
+            The <em>Banned Users</em> dialog shows the IP-addresses
+            which are
+            currently blocked by the server. Here is an example of users
+            which have
+            been banned on a server.<br>
+            <br>
+            <div align="center"><img alt="Banned Users Dialog"
+                src="bannedusers.png"><br>
+            </div>
+            <br>
+            To remove a ban on a user simply move the user from the left
+            list to
+            the right list using the button with the greater than sign.<em></em><br>
+            <h3><a name="serverproperties"></a>Server Properties Dialog</h3>
+            The <em>Server Properties</em>-dialog shows what rights
+            users who are
+            logged on to the server has. An example is shown here (in
+            administrator
+            mode):<br>
+            <br>
+            <div align="center"><img alt="Server Properties Dialog"
+                src="serverproperties.png"><br>
+            </div>
+            <br>
+            Each of the fields in the <em>Server Properties</em>-dialog
+            are
+            described here:<br>
+            <ul>
+              <li><em>Server name</em></li>
+              <ul>
+                <li>The name which will appear on the root channel in
+                  the <a href="#channelsview">channels view</a>.<br>
+                </li>
+              </ul>
+              <li><em>Server password</em></li>
+              <ul>
+                <li>A password which users must specify to log on to the
+                  server.
+                  This password must be specified even if the user has a
+                  user account on
+                  the server.<br>
+                </li>
+              </ul>
+              <li><em>Max users</em></li>
+              <ul>
+                <li>The maximum number of users on the server. The
+                  maximum
+                  supported by TeamTalk is 1000.<br>
+                </li>
+              </ul>
+              <li><em>Message of the day</em></li>
+              <ul>
+                <li>The message of the day which users will see in the <a
+                    href="#chattab">Chat-tab</a> when they log on to the
+                  server.</li>
+              </ul>
+              <li>Show variables</li>
+              <ul>
+                <li>If variables are used in the <i>Message of the day</i>
+                  enable
+                  this option to view them.<br>
+                </li>
+              </ul>
+              <li><em>TCP port</em></li>
+              <ul>
+                <li>The server's TCP port for commands. If changed the
+                  new port
+                  will not be used until next time the server is
+                  restarted.<br>
+                </li>
+              </ul>
+              <li><em>UDP port</em></li>
+              <ul>
+                <li>The server's UDP port for audio and video data. If
+                  changed the
+                  new port will not be used until next time the server
+                  is restarted.</li>
+              </ul>
+              <li><em>User timeout</em></li>
+              <ul>
+                <li>The number of seconds a user can stay on the server
+                  without
+                  having sent so-called keep-alive information to the
+                  server. The
+                  TeamTalk client will automatically try and make
+                  contact with the server
+                  at have of the server's <em>User Timeout</em>. If the
+                  User Timeout
+                  value is exceeded the server will drop (kick) the
+                  user.<br>
+                </li>
+              </ul>
+              <li><em>Auto save server changes</em></li>
+              <ul>
+                <li>If checked the server will automatically save
+                  changes to <em>Server
+                    Properties</em> and store when new static channels
+                  are created, updated
+                  or removed.<br>
+                </li>
+              </ul>
+              <li><em>Users can create channels</em></li>
+              <ul>
+                <li>Users (non-administrators) can create channel, i.e.
+                  they can be
+                  in other channels than those which the server has
+                  already configured.<br>
+                </li>
+              </ul>
+              <li><em>Users can become channel operators</em></li>
+              <ul>
+                <li>The first user who joins a new channel will become
+                  channel
+                  operator.<br>
+                </li>
+              </ul>
+              <li><em>Users can login without a user account</em></li>
+              <ul>
+                <li>Users can log on with have a user account. User
+                  accounts are
+                  explained in <a href="#useraccounts">User Accounts
+                    Dialog</a>.</li>
+              </ul>
+              <li><em>Multiple users can use the same user account</em></li>
+              <ul>
+                <li>Two or more users can log in using the same user
+                  account,
+                  otherwise the user currently logged in will be kicked
+                  off the server.<br>
+                </li>
+              </ul>
+              <li><em>Users can see users in all channels</em></li>
+              <ul>
+                <li>Users can see users in other channels. If disabled
+                  users can
+                  only see the users who are in their current channel.
+                  Administrators
+                  can, however, still see everyone. This settings cannot
+                  be changed while
+                  the server is running. This settings must be changed
+                  using the server's
+                  setup wizard explained in section <a
+                    href="serversetup.html#confserver">Configuring
+                    and
+                    Installing
+                    the
+                    TeamTalk
+                    Server</a>.<br>
+                </li>
+              </ul>
+              <li><em>Users can broadcast text messages</em></li>
+              <ul>
+                <li>Default users, no only administrators, can broadcast
+                  text
+                  messages.<br>
+                </li>
+              </ul>
+              <li><em>Users can issue channel commands</em></li>
+              <ul>
+                <li>Users can issue channel commands, i.e. text messages
+                  prefixed
+                  with <code>/</code> are interpreted by the server as
+                  channel commands.<br>
+                </li>
+              </ul>
+              <li><em>Users can modify subscriptions</em></li>
+              <ul>
+                <li>Users can change subscriptions explained in section
+                  <a href="#subscriptions">Subscriptions-menu</a>.<br>
+                </li>
+              </ul>
+              <li><em>Users can forward/relay audio through server</em></li>
+              <ul>
+                <li>By default a user's audio data is sent from a user
+                  to the
+                  server and the server will then broadcast the audio
+                  data on behalf of
+                  the user
+                  to all other users in the channel. If this option is
+                  disabled the
+                  TeamTalk application will enable peer to peer
+                  connections and instead
+                  broadcast the audio data itself. Note that some users
+                  may not have
+                  enough bandwidth available to broadcast their audio
+                  data themselves.<br>
+                </li>
+              </ul>
+              <li><em>Users can forward/relay video through server</em></li>
+              <ul>
+                <li>By default a user's video data is sent from a user
+                  to the
+                  server and the server
+                  will then broadcast the video data on behalf of the
+                  user to all other
+                  users in the channel. If this option is disabled the
+                  TeamTalk
+                  application will enable peer to peer connections and
+                  instead broadcast
+                  the video data itself. Note that some users may not
+                  have enough
+                  bandwidth available to broadcast their video data
+                  themselves.</li>
+              </ul>
+              <li><i>Users can forward/relay desktop through server</i></li>
+              <ul>
+                <li>Enabling this option allows users to share desktop
+                  applications
+                  which can be viewed by other users in the same
+                  channel. Unlike video
+                  and audio, desktops cannot run in peer to peer mode.</li>
+              </ul>
+              <li><i>Max bitrate for audio codecs</i></li>
+              <ul>
+                <li>If users are allowed to create channels on a server
+                  setting
+                  this option can limit the bitrate of the audio codec
+                  they are able to
+                  specify.<br>
+                </li>
+              </ul>
+              <li><i>Audio TX max</i></li>
+              <ul>
+                <li>Setting this option can limit how much audio data
+                  the server is
+                  allowed to forward every second. If this value is
+                  exceeded later audio
+                  packets are simply dropped.<br>
+                </li>
+              </ul>
+              <li><i>Video TX max</i></li>
+              <ul>
+                <li>Setting this option can limit how much video data
+                  the server is
+                  allowed
+                  to forward every second. If this value is exceeded
+                  later video packets
+                  are simply
+                  dropped.</li>
+              </ul>
+              <li><i>Desktop TX max</i></li>
+              <ul>
+                <li>Setting this option can limit how much desktop data
+                  is allowed
+                  to be forwarded through the server. Unlike audio and
+                  video packets,
+                  desktop packets are retransmitted.<br>
+                </li>
+              </ul>
+              <li><i>Total TX max</i></li>
+              <ul>
+                <li>The overall maximum throughput the server is allowed
+                  to use for
+                  forwarding packets.<br>
+                </li>
+              </ul>
+              <li><i>Server version</i></li>
+              <ul>
+                <li>The version of the server which the user is
+                  connected to.<br>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

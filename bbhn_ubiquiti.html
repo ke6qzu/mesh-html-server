@@ -1,0 +1,144 @@
+<!-- $Id: bbhn_ubiquiti.html,v 1.1 2016/06/22 01:25:58 ke6qzu Exp $ -->
+<HTML>
+<head>
+<title>BBHN Ubiquiti 3.1.0 Router Files</title>
+</head>
+
+<BODY BGCOLOR="black" BACKGROUND="images/stars.gif" TEXT="aliceblue" 
+      LINK="LightSkyBlue" VLINK="SkyBlue" ALINK="SlateBlue">
+
+<style type="text/css">
+  table.myborder {
+  border-width: 8px;
+  border-spacing: 2px;
+  border-style: ridge;
+  border-color: maroon;
+  border-bottom-color: DarkRed;
+  border-right-color: DarkRed;
+  border-collapse: collapse;
+  }
+
+  table.myborder th {
+  border-width: 2px;
+  padding: 1px;
+  border-style: inset;
+  border-color: maroon;
+  -moz-border-radius: 3px 3px 3px 3px;
+  }
+
+  table.myborder td {
+  border-width: 2px;
+  padding: 2px;
+  border-style: inset;
+  border-color: maroon;
+  -moz-border-radius: 3px 3px 3px 3px;
+  }
+</style>
+
+
+<!-- The following uses css shadows to create a red glow around the words KE6QZU's Pi. If, however, it detects IE, which is stupid and can't handle it,
+     it closes the font, creates a different one, uses an image (saved from a screen capture of firefox running the non-ie code) and then causes the text 
+     SLC Build to be tiny and black.
+
+     It would have been more consistent to just use the image on all browsers, but why should I do that just for IE's stuipd sake? I hate IE anyway. This
+     way, real browsers (Firefox, Google Chrome, Opera, etc.) can do something cool. IE can suck buttermilk!! -->
+
+<p ALIGN="CENTER"><B><FONT size=+5 style="background: transparent; color: black; text-shadow: 0px 0px 4px #bd1143, 0px 0px 8px #bd1143, 0px 0px 12px #bd1143, 0px 0px 18px #bd1143, 0 0 2px beige;">
+BBHN Ubiquiti 3.1.0 Router Files
+</FONT></B></p>
+<CENTER>
+<p><a href=index.html>Home</a></p>
+</CENTER>
+9/21/2015<br>
+<p>Notice: There is a serious risk to certain Ubiquiti hardware when used with software not writen to match their new boot loader. The issue occurs when recent Ubiquiti devices with a new bootloader version are used with firmware not specifically modified for this change.</p>
+<p>OpenWRT is the original software for Broadband-Hamnet software designed for Ubiquiti products.</p>
+<p>At present, the issue is under investigation.</p>
+<p>To prevent unrecoverable damage to your Ubiquiti devices, we STRONGLY recommend waiting until the limits, methods to avoid the risk and specific steps are posted.</p>
+<p>Further details of the actual issue are here: <a href=http://wiki.openwrt.org/toh/ubiquiti/airmaxm>http://wiki.openwrt.org/toh/ubiquiti/airmaxm</a></p>
+<CENTER>
+<table class=myborder width="90%">
+    <tr>
+      <td align=center width=30%><B><font size=+2 COLOR="firebrick">Ubiquiti Device</font></B></td>
+      <td align=center width=30%><B><font size=+2 COLOR="firebrick">BBHN Ubiquiti Factory 3.1.0 Upgrade</font></B></td>
+      <td align=center width=30%><B><font size=+2 COLOR="firebrick">BBHN Ubiquiti Mesh 3.1.0 Upgrade</font></B></td>
+    </tr>
+    <tr> 
+       <td width=30% valign="top" align="left"> 
+       Bullet M2 HP<br>
+       Bullet M5 HP<br>
+       Bullet M2 Titanium<br>
+       Bullet M5 Titanium<br>
+       NanoStation Loco M2<br>
+       NanoStation Loco M5<br>
+       NanoStation Loco M9<br>
+       NanoBridge M2<br>
+       NanoBridge M5<br>
+       NanoBridge M9<br>
+       AirGrid M2<br>
+       AirGrid M5<br>
+       PicoStation M2
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/bbhn-3.1.0-ar71xx-generic-ubnt-bullet-m-squashfs-factory.bin>Factory</a><br>
+        md5sum: 615fd8cee9db44d085a436940073e638<hr>
+        Size: 3.7M
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/bbhn-3.1.0-ar71xx-generic-ubnt-bullet-m-squashfs-sysupgrade.bin>Sysupgrade </a><br>
+        md5sum: cde30235dd6f3afe8513d3182f0a370f<hr>
+        Size: 3.7M
+      </td>
+    </tr> 
+    <tr> 
+      <td width=30% valign="top" align="left"> 
+       NanoStation M2<br>
+       NanoStation M3<br>
+       (Not Loco - Use the bullet-m image for Loco)
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/bbhn-3.1.0-ar71xx-generic-ubnt-nano-m-squashfs-factory.bin>Factory</a><br>
+md5sum: 84688ded582e1cd98054811ffe122a5c<hr>
+Size: 3.7M
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/bbhn-3.1.0-ar71xx-generic-ubnt-nano-m-squashfs-sysupgrade.bin>Sysupgrade</a><br>
+md5sum: b0aca32a343e7f8907755cf99eb7ec86<hr>
+Size: 3.7M
+      </td>
+    </tr> 
+    <tr> 
+      <td width=30% valign="top" align="left"> 
+       Rocket M2<br>
+       Rocket M5<br>
+       Rocket M9
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/bbhn-3.1.0-ar71xx-generic-ubnt-rocket-m-squashfs-factory.bin>Factory</a><br>
+md5sum: 581e5e9643a093d931710374e923b98f<hr>
+Size: 3.7M
+      </td>
+      <td width=30% align="center" valign="middle">
+        <a href=mesh_files/bbhn-3.1.0-ar71xx-generic-ubnt-rocket-m-squashfs-sysupgrade.bin>Sysupgrade</a><br>
+md5sum: 4b92f752b63229eca24b3e4366e86f34<hr>
+Size: 3.7M
+      </td>
+    </tr> 
+  </table>
+
+<BR>
+<HR>
+<ADDRESS><FONT size=-1 color=DimGray>
+<script>
+        var theDate = ""
+        theDate = document.lastModified
+        document.writeln("Last modified ");
+        document.write(theDate);
+        document.write();
+</script>
+<BR>
+Page maintained by ke6qzu<BR>
+</FONT></ADDRESS>
+</CENTER>
+</FONT>
+</body>
+</html>
